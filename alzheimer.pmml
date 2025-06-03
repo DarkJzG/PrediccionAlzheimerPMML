@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2">
+  <Header copyright="ANTHONY PAGUAY">
+    <Application name="KNIME" version="5.4.3"/>
+  </Header>
+  <DataDictionary numberOfFields="33">
+    <DataField name="Diabetes" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="MMSE" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.005312146" rightMargin="29.991380560529063"/>
+    </DataField>
+    <DataField name="ADL" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.001287928" rightMargin="9.999747122"/>
+    </DataField>
+    <DataField name="Confusion" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Edad" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="60.0" rightMargin="90.0"/>
+    </DataField>
+    <DataField name="Genero" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Grupo_Etnico" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="3.0"/>
+    </DataField>
+    <DataField name="Nivel_Educacion" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="3.0"/>
+    </DataField>
+    <DataField name="IMC" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="15.008851181631059" rightMargin="39.99276746402374"/>
+    </DataField>
+    <DataField name="Fumar" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Consumo_Alcohol" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.002003099" rightMargin="19.98929335906197"/>
+    </DataField>
+    <DataField name="Actividad_Fisica" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.003616017" rightMargin="9.987429413422253"/>
+    </DataField>
+    <DataField name="Dieta_Calidad" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.00938472" rightMargin="9.998345679"/>
+    </DataField>
+    <DataField name="Sueño_Calidad" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="4.002628659826611" rightMargin="9.999840317"/>
+    </DataField>
+    <DataField name="Familiar_Alzheimer" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Enfermedad_Cardiovascular" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Depresion" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Lesiones_Cabeza" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Hipertension" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="PAS" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="90.0" rightMargin="179.0"/>
+    </DataField>
+    <DataField name="PAD" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="60.0" rightMargin="119.0"/>
+    </DataField>
+    <DataField name="Colesterol_LDL" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="50.23070655980742" rightMargin="199.96566510142804"/>
+    </DataField>
+    <DataField name="Colesterol _HDL" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="20.00343401498445" rightMargin="99.98032407804152"/>
+    </DataField>
+    <DataField name="Colesterol_Trigliceridos" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="50.40719361978579" rightMargin="399.94186159413323"/>
+    </DataField>
+    <DataField name="Colesterol_Total" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="150.09331559406317" rightMargin="299.99335247432657"/>
+    </DataField>
+    <DataField name="Evaluacion_Funcional" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="4.59594E-4" rightMargin="9.996467072555017"/>
+    </DataField>
+    <DataField name="Memoria_Quejas" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Problemas_Comportamiento" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Desorientacion" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Cambios_Personalidad" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Dificultad_Completar_Tareas" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Falta_de_Memoria_Frecuente" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="Diagnostico" optype="categorical" dataType="string">
+      <Value value="0"/>
+      <Value value="1"/>
+    </DataField>
+  </DataDictionary>
+  <TreeModel modelName="DecisionTree" functionName="classification" splitCharacteristic="binarySplit" missingValueStrategy="lastPrediction" noTrueChildStrategy="returnNullPrediction">
+    <MiningSchema>
+      <MiningField name="Diabetes" invalidValueTreatment="asIs"/>
+      <MiningField name="MMSE" invalidValueTreatment="asIs"/>
+      <MiningField name="ADL" invalidValueTreatment="asIs"/>
+      <MiningField name="Confusion" invalidValueTreatment="asIs"/>
+      <MiningField name="Edad" invalidValueTreatment="asIs"/>
+      <MiningField name="Genero" invalidValueTreatment="asIs"/>
+      <MiningField name="Grupo_Etnico" invalidValueTreatment="asIs"/>
+      <MiningField name="Nivel_Educacion" invalidValueTreatment="asIs"/>
+      <MiningField name="IMC" invalidValueTreatment="asIs"/>
+      <MiningField name="Fumar" invalidValueTreatment="asIs"/>
+      <MiningField name="Consumo_Alcohol" invalidValueTreatment="asIs"/>
+      <MiningField name="Actividad_Fisica" invalidValueTreatment="asIs"/>
+      <MiningField name="Dieta_Calidad" invalidValueTreatment="asIs"/>
+      <MiningField name="Sueño_Calidad" invalidValueTreatment="asIs"/>
+      <MiningField name="Familiar_Alzheimer" invalidValueTreatment="asIs"/>
+      <MiningField name="Enfermedad_Cardiovascular" invalidValueTreatment="asIs"/>
+      <MiningField name="Depresion" invalidValueTreatment="asIs"/>
+      <MiningField name="Lesiones_Cabeza" invalidValueTreatment="asIs"/>
+      <MiningField name="Hipertension" invalidValueTreatment="asIs"/>
+      <MiningField name="PAS" invalidValueTreatment="asIs"/>
+      <MiningField name="PAD" invalidValueTreatment="asIs"/>
+      <MiningField name="Colesterol_LDL" invalidValueTreatment="asIs"/>
+      <MiningField name="Colesterol _HDL" invalidValueTreatment="asIs"/>
+      <MiningField name="Colesterol_Trigliceridos" invalidValueTreatment="asIs"/>
+      <MiningField name="Colesterol_Total" invalidValueTreatment="asIs"/>
+      <MiningField name="Evaluacion_Funcional" invalidValueTreatment="asIs"/>
+      <MiningField name="Memoria_Quejas" invalidValueTreatment="asIs"/>
+      <MiningField name="Problemas_Comportamiento" invalidValueTreatment="asIs"/>
+      <MiningField name="Desorientacion" invalidValueTreatment="asIs"/>
+      <MiningField name="Cambios_Personalidad" invalidValueTreatment="asIs"/>
+      <MiningField name="Dificultad_Completar_Tareas" invalidValueTreatment="asIs"/>
+      <MiningField name="Falta_de_Memoria_Frecuente" invalidValueTreatment="asIs"/>
+      <MiningField name="Diagnostico" invalidValueTreatment="asIs" usageType="target"/>
+    </MiningSchema>
+    <Node id="0" score="0" recordCount="2149.0">
+      <True/>
+      <ScoreDistribution value="0" recordCount="1389.0"/>
+      <ScoreDistribution value="1" recordCount="760.0"/>
+      <Node id="1" score="1" recordCount="1054.0">
+        <SimplePredicate field="Evaluacion_Funcional" operator="lessOrEqual" value="5.0011120049197615"/>
+        <ScoreDistribution value="0" recordCount="470.0"/>
+        <ScoreDistribution value="1" recordCount="584.0"/>
+        <Node id="4" score="1" recordCount="848.0">
+          <SimplePredicate field="MMSE" operator="lessOrEqual" value="24.01401405388983"/>
+          <ScoreDistribution value="0" recordCount="273.0"/>
+          <ScoreDistribution value="1" recordCount="575.0"/>
+          <Node id="60" score="1" recordCount="461.0">
+            <SimplePredicate field="ADL" operator="lessOrEqual" value="5.122691379537794"/>
+            <ScoreDistribution value="0" recordCount="21.0"/>
+            <ScoreDistribution value="1" recordCount="440.0"/>
+            <Node id="77" score="0" recordCount="2.0">
+              <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="0.06306493048953506"/>
+              <ScoreDistribution value="0" recordCount="1.0"/>
+              <ScoreDistribution value="1" recordCount="1.0"/>
+            </Node>
+            <Node id="85" score="1" recordCount="459.0">
+              <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="0.06306493048953506"/>
+              <ScoreDistribution value="0" recordCount="20.0"/>
+              <ScoreDistribution value="1" recordCount="439.0"/>
+              <Node id="93" score="1" recordCount="457.0">
+                <SimplePredicate field="IMC" operator="lessOrEqual" value="39.924655346977694"/>
+                <ScoreDistribution value="0" recordCount="19.0"/>
+                <ScoreDistribution value="1" recordCount="438.0"/>
+                <Node id="121" score="1" recordCount="450.0">
+                  <SimplePredicate field="ADL" operator="lessOrEqual" value="5.040055183405302"/>
+                  <ScoreDistribution value="0" recordCount="17.0"/>
+                  <ScoreDistribution value="1" recordCount="433.0"/>
+                  <Node id="131" score="1" recordCount="292.0">
+                    <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="6.021703796303746"/>
+                    <ScoreDistribution value="0" recordCount="6.0"/>
+                    <ScoreDistribution value="1" recordCount="286.0"/>
+                    <Node id="133" score="1" recordCount="270.0">
+                      <SimplePredicate field="Edad" operator="lessOrEqual" value="88.5"/>
+                      <ScoreDistribution value="0" recordCount="4.0"/>
+                      <ScoreDistribution value="1" recordCount="266.0"/>
+                      <Node id="135" score="1" recordCount="73.0">
+                        <SimplePredicate field="IMC" operator="lessOrEqual" value="22.345135221347242"/>
+                        <ScoreDistribution value="0" recordCount="4.0"/>
+                        <ScoreDistribution value="1" recordCount="69.0"/>
+                        <Node id="136" score="1" recordCount="71.0">
+                          <SimplePredicate field="IMC" operator="lessOrEqual" value="22.24553378531151"/>
+                          <ScoreDistribution value="0" recordCount="3.0"/>
+                          <ScoreDistribution value="1" recordCount="68.0"/>
+                          <Node id="137" score="1" recordCount="10.0">
+                            <SimplePredicate field="Edad" operator="lessOrEqual" value="61.5"/>
+                            <ScoreDistribution value="0" recordCount="2.0"/>
+                            <ScoreDistribution value="1" recordCount="8.0"/>
+                            <Node id="138" score="1" recordCount="7.0">
+                              <SimplePredicate field="Nivel_Educacion" operator="lessOrEqual" value="1.5"/>
+                              <ScoreDistribution value="0" recordCount="0.0"/>
+                              <ScoreDistribution value="1" recordCount="7.0"/>
+                            </Node>
+                            <Node id="139" score="0" recordCount="3.0">
+                              <SimplePredicate field="Nivel_Educacion" operator="greaterThan" value="1.5"/>
+                              <ScoreDistribution value="0" recordCount="2.0"/>
+                              <ScoreDistribution value="1" recordCount="1.0"/>
+                            </Node>
+                          </Node>
+                          <Node id="140" score="1" recordCount="61.0">
+                            <SimplePredicate field="Edad" operator="greaterThan" value="61.5"/>
+                            <ScoreDistribution value="0" recordCount="1.0"/>
+                            <ScoreDistribution value="1" recordCount="60.0"/>
+                          </Node>
+                        </Node>
+                        <Node id="145" score="0" recordCount="2.0">
+                          <SimplePredicate field="IMC" operator="greaterThan" value="22.24553378531151"/>
+                          <ScoreDistribution value="0" recordCount="1.0"/>
+                          <ScoreDistribution value="1" recordCount="1.0"/>
+                        </Node>
+                      </Node>
+                      <Node id="146" score="1" recordCount="197.0">
+                        <SimplePredicate field="IMC" operator="greaterThan" value="22.345135221347242"/>
+                        <ScoreDistribution value="0" recordCount="0.0"/>
+                        <ScoreDistribution value="1" recordCount="197.0"/>
+                      </Node>
+                    </Node>
+                    <Node id="147" score="1" recordCount="22.0">
+                      <SimplePredicate field="Edad" operator="greaterThan" value="88.5"/>
+                      <ScoreDistribution value="0" recordCount="2.0"/>
+                      <ScoreDistribution value="1" recordCount="20.0"/>
+                      <Node id="148" score="1" recordCount="18.0">
+                        <SimplePredicate field="Evaluacion_Funcional" operator="lessOrEqual" value="4.225054873441563"/>
+                        <ScoreDistribution value="0" recordCount="0.0"/>
+                        <ScoreDistribution value="1" recordCount="18.0"/>
+                      </Node>
+                      <Node id="149" score="0" recordCount="4.0">
+                        <SimplePredicate field="Evaluacion_Funcional" operator="greaterThan" value="4.225054873441563"/>
+                        <ScoreDistribution value="0" recordCount="2.0"/>
+                        <ScoreDistribution value="1" recordCount="2.0"/>
+                        <Node id="150" score="0" recordCount="2.0">
+                          <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="255.32628136244796"/>
+                          <ScoreDistribution value="0" recordCount="2.0"/>
+                          <ScoreDistribution value="1" recordCount="0.0"/>
+                        </Node>
+                        <Node id="151" score="1" recordCount="2.0">
+                          <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="255.32628136244796"/>
+                          <ScoreDistribution value="0" recordCount="0.0"/>
+                          <ScoreDistribution value="1" recordCount="2.0"/>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node id="152" score="1" recordCount="158.0">
+                    <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="6.021703796303746"/>
+                    <ScoreDistribution value="0" recordCount="11.0"/>
+                    <ScoreDistribution value="1" recordCount="147.0"/>
+                    <Node id="153" score="0" recordCount="2.0">
+                      <SimplePredicate field="Evaluacion_Funcional" operator="lessOrEqual" value="0.066860452"/>
+                      <ScoreDistribution value="0" recordCount="1.0"/>
+                      <ScoreDistribution value="1" recordCount="1.0"/>
+                    </Node>
+                    <Node id="154" score="1" recordCount="156.0">
+                      <SimplePredicate field="Evaluacion_Funcional" operator="greaterThan" value="0.066860452"/>
+                      <ScoreDistribution value="0" recordCount="10.0"/>
+                      <ScoreDistribution value="1" recordCount="146.0"/>
+                      <Node id="155" score="0" recordCount="2.0">
+                        <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="6.147264371160618"/>
+                        <ScoreDistribution value="0" recordCount="1.0"/>
+                        <ScoreDistribution value="1" recordCount="1.0"/>
+                      </Node>
+                      <Node id="156" score="1" recordCount="154.0">
+                        <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="6.147264371160618"/>
+                        <ScoreDistribution value="0" recordCount="9.0"/>
+                        <ScoreDistribution value="1" recordCount="145.0"/>
+                        <Node id="158" score="1" recordCount="77.0">
+                          <SimplePredicate field="Colesterol_LDL" operator="lessOrEqual" value="123.33636484574379"/>
+                          <ScoreDistribution value="0" recordCount="1.0"/>
+                          <ScoreDistribution value="1" recordCount="76.0"/>
+                        </Node>
+                        <Node id="161" score="1" recordCount="77.0">
+                          <SimplePredicate field="Colesterol_LDL" operator="greaterThan" value="123.33636484574379"/>
+                          <ScoreDistribution value="0" recordCount="8.0"/>
+                          <ScoreDistribution value="1" recordCount="69.0"/>
+                          <Node id="163" score="1" recordCount="5.0">
+                            <SimplePredicate field="Colesterol_LDL" operator="lessOrEqual" value="129.16071233827512"/>
+                            <ScoreDistribution value="0" recordCount="2.0"/>
+                            <ScoreDistribution value="1" recordCount="3.0"/>
+                            <Node id="164" score="1" recordCount="3.0">
+                              <SimplePredicate field="Sueño_Calidad" operator="lessOrEqual" value="8.207042233016331"/>
+                              <ScoreDistribution value="0" recordCount="0.0"/>
+                              <ScoreDistribution value="1" recordCount="3.0"/>
+                            </Node>
+                            <Node id="165" score="0" recordCount="2.0">
+                              <SimplePredicate field="Sueño_Calidad" operator="greaterThan" value="8.207042233016331"/>
+                              <ScoreDistribution value="0" recordCount="2.0"/>
+                              <ScoreDistribution value="1" recordCount="0.0"/>
+                            </Node>
+                          </Node>
+                          <Node id="166" score="1" recordCount="72.0">
+                            <SimplePredicate field="Colesterol_LDL" operator="greaterThan" value="129.16071233827512"/>
+                            <ScoreDistribution value="0" recordCount="6.0"/>
+                            <ScoreDistribution value="1" recordCount="66.0"/>
+                            <Node id="167" score="1" recordCount="52.0">
+                              <SimplePredicate field="Colesterol_Trigliceridos" operator="lessOrEqual" value="317.0869621244466"/>
+                              <ScoreDistribution value="0" recordCount="2.0"/>
+                              <ScoreDistribution value="1" recordCount="50.0"/>
+                              <Node id="168" score="1" recordCount="11.0">
+                                <SimplePredicate field="PAD" operator="lessOrEqual" value="70.0"/>
+                                <ScoreDistribution value="0" recordCount="2.0"/>
+                                <ScoreDistribution value="1" recordCount="9.0"/>
+                                <Node id="169" score="0" recordCount="4.0">
+                                  <SimplePredicate field="PAS" operator="lessOrEqual" value="128.5"/>
+                                  <ScoreDistribution value="0" recordCount="2.0"/>
+                                  <ScoreDistribution value="1" recordCount="2.0"/>
+                                  <Node id="170" score="1" recordCount="2.0">
+                                    <SimplePredicate field="Nivel_Educacion" operator="lessOrEqual" value="0.5"/>
+                                    <ScoreDistribution value="0" recordCount="0.0"/>
+                                    <ScoreDistribution value="1" recordCount="2.0"/>
+                                  </Node>
+                                  <Node id="171" score="0" recordCount="2.0">
+                                    <SimplePredicate field="Nivel_Educacion" operator="greaterThan" value="0.5"/>
+                                    <ScoreDistribution value="0" recordCount="2.0"/>
+                                    <ScoreDistribution value="1" recordCount="0.0"/>
+                                  </Node>
+                                </Node>
+                                <Node id="172" score="1" recordCount="7.0">
+                                  <SimplePredicate field="PAS" operator="greaterThan" value="128.5"/>
+                                  <ScoreDistribution value="0" recordCount="0.0"/>
+                                  <ScoreDistribution value="1" recordCount="7.0"/>
+                                </Node>
+                              </Node>
+                              <Node id="173" score="1" recordCount="41.0">
+                                <SimplePredicate field="PAD" operator="greaterThan" value="70.0"/>
+                                <ScoreDistribution value="0" recordCount="0.0"/>
+                                <ScoreDistribution value="1" recordCount="41.0"/>
+                              </Node>
+                            </Node>
+                            <Node id="174" score="1" recordCount="20.0">
+                              <SimplePredicate field="Colesterol_Trigliceridos" operator="greaterThan" value="317.0869621244466"/>
+                              <ScoreDistribution value="0" recordCount="4.0"/>
+                              <ScoreDistribution value="1" recordCount="16.0"/>
+                              <Node id="175" score="1" recordCount="10.0">
+                                <SimplePredicate field="Sueño_Calidad" operator="lessOrEqual" value="7.5071071312893025"/>
+                                <ScoreDistribution value="0" recordCount="4.0"/>
+                                <ScoreDistribution value="1" recordCount="6.0"/>
+                                <Node id="176" score="1" recordCount="4.0">
+                                  <SimplePredicate field="Sueño_Calidad" operator="lessOrEqual" value="5.27288454577333"/>
+                                  <ScoreDistribution value="0" recordCount="0.0"/>
+                                  <ScoreDistribution value="1" recordCount="4.0"/>
+                                </Node>
+                                <Node id="177" score="0" recordCount="6.0">
+                                  <SimplePredicate field="Sueño_Calidad" operator="greaterThan" value="5.27288454577333"/>
+                                  <ScoreDistribution value="0" recordCount="4.0"/>
+                                  <ScoreDistribution value="1" recordCount="2.0"/>
+                                  <Node id="178" score="0" recordCount="3.0">
+                                    <SimplePredicate field="Sueño_Calidad" operator="lessOrEqual" value="6.1444100523840985"/>
+                                    <ScoreDistribution value="0" recordCount="3.0"/>
+                                    <ScoreDistribution value="1" recordCount="0.0"/>
+                                  </Node>
+                                  <Node id="179" score="1" recordCount="3.0">
+                                    <SimplePredicate field="Sueño_Calidad" operator="greaterThan" value="6.1444100523840985"/>
+                                    <ScoreDistribution value="0" recordCount="1.0"/>
+                                    <ScoreDistribution value="1" recordCount="2.0"/>
+                                  </Node>
+                                </Node>
+                              </Node>
+                              <Node id="180" score="1" recordCount="10.0">
+                                <SimplePredicate field="Sueño_Calidad" operator="greaterThan" value="7.5071071312893025"/>
+                                <ScoreDistribution value="0" recordCount="0.0"/>
+                                <ScoreDistribution value="1" recordCount="10.0"/>
+                              </Node>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+                <Node id="111" score="1" recordCount="7.0">
+                  <SimplePredicate field="ADL" operator="greaterThan" value="5.040055183405302"/>
+                  <ScoreDistribution value="0" recordCount="2.0"/>
+                  <ScoreDistribution value="1" recordCount="5.0"/>
+                  <Node id="114" score="0" recordCount="2.0">
+                    <SimplePredicate field="Colesterol _HDL" operator="lessOrEqual" value="61.790915414747865"/>
+                    <ScoreDistribution value="0" recordCount="2.0"/>
+                    <ScoreDistribution value="1" recordCount="0.0"/>
+                  </Node>
+                  <Node id="115" score="1" recordCount="5.0">
+                    <SimplePredicate field="Colesterol _HDL" operator="greaterThan" value="61.790915414747865"/>
+                    <ScoreDistribution value="0" recordCount="0.0"/>
+                    <ScoreDistribution value="1" recordCount="5.0"/>
+                  </Node>
+                </Node>
+              </Node>
+              <Node id="91" score="0" recordCount="2.0">
+                <SimplePredicate field="IMC" operator="greaterThan" value="39.924655346977694"/>
+                <ScoreDistribution value="0" recordCount="1.0"/>
+                <ScoreDistribution value="1" recordCount="1.0"/>
+              </Node>
+            </Node>
+          </Node>
+          <Node id="61" score="0" recordCount="387.0">
+            <SimplePredicate field="ADL" operator="greaterThan" value="5.122691379537794"/>
+            <ScoreDistribution value="0" recordCount="252.0"/>
+            <ScoreDistribution value="1" recordCount="135.0"/>
+            <Node id="74" score="0" recordCount="309.0">
+              <SimplePredicate field="Memoria_Quejas" operator="lessOrEqual" value="0.5"/>
+              <ScoreDistribution value="0" recordCount="250.0"/>
+              <ScoreDistribution value="1" recordCount="59.0"/>
+              <Node id="86" score="0" recordCount="254.0">
+                <SimplePredicate field="Problemas_Comportamiento" operator="lessOrEqual" value="0.5"/>
+                <ScoreDistribution value="0" recordCount="247.0"/>
+                <ScoreDistribution value="1" recordCount="7.0"/>
+                <Node id="89" score="0" recordCount="2.0">
+                  <SimplePredicate field="Consumo_Alcohol" operator="lessOrEqual" value="0.18792735804292193"/>
+                  <ScoreDistribution value="0" recordCount="1.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+                <Node id="90" score="0" recordCount="252.0">
+                  <SimplePredicate field="Consumo_Alcohol" operator="greaterThan" value="0.18792735804292193"/>
+                  <ScoreDistribution value="0" recordCount="246.0"/>
+                  <ScoreDistribution value="1" recordCount="6.0"/>
+                  <Node id="92" score="0" recordCount="250.0">
+                    <SimplePredicate field="MMSE" operator="lessOrEqual" value="23.891086795412498"/>
+                    <ScoreDistribution value="0" recordCount="245.0"/>
+                    <ScoreDistribution value="1" recordCount="5.0"/>
+                    <Node id="94" score="0" recordCount="207.0">
+                      <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="8.06341156257097"/>
+                      <ScoreDistribution value="0" recordCount="206.0"/>
+                      <ScoreDistribution value="1" recordCount="1.0"/>
+                    </Node>
+                    <Node id="99" score="0" recordCount="43.0">
+                      <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="8.06341156257097"/>
+                      <ScoreDistribution value="0" recordCount="39.0"/>
+                      <ScoreDistribution value="1" recordCount="4.0"/>
+                      <Node id="103" score="0" recordCount="6.0">
+                        <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="8.280171354357634"/>
+                        <ScoreDistribution value="0" recordCount="4.0"/>
+                        <ScoreDistribution value="1" recordCount="2.0"/>
+                        <Node id="104" score="1" recordCount="2.0">
+                          <SimplePredicate field="Edad" operator="lessOrEqual" value="74.0"/>
+                          <ScoreDistribution value="0" recordCount="0.0"/>
+                          <ScoreDistribution value="1" recordCount="2.0"/>
+                        </Node>
+                        <Node id="105" score="0" recordCount="4.0">
+                          <SimplePredicate field="Edad" operator="greaterThan" value="74.0"/>
+                          <ScoreDistribution value="0" recordCount="4.0"/>
+                          <ScoreDistribution value="1" recordCount="0.0"/>
+                        </Node>
+                      </Node>
+                      <Node id="106" score="0" recordCount="37.0">
+                        <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="8.280171354357634"/>
+                        <ScoreDistribution value="0" recordCount="35.0"/>
+                        <ScoreDistribution value="1" recordCount="2.0"/>
+                        <Node id="107" score="0" recordCount="30.0">
+                          <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="272.33935528899343"/>
+                          <ScoreDistribution value="0" recordCount="30.0"/>
+                          <ScoreDistribution value="1" recordCount="0.0"/>
+                        </Node>
+                        <Node id="108" score="0" recordCount="7.0">
+                          <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="272.33935528899343"/>
+                          <ScoreDistribution value="0" recordCount="5.0"/>
+                          <ScoreDistribution value="1" recordCount="2.0"/>
+                          <Node id="109" score="1" recordCount="2.0">
+                            <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="281.5992644486615"/>
+                            <ScoreDistribution value="0" recordCount="0.0"/>
+                            <ScoreDistribution value="1" recordCount="2.0"/>
+                          </Node>
+                          <Node id="110" score="0" recordCount="5.0">
+                            <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="281.5992644486615"/>
+                            <ScoreDistribution value="0" recordCount="5.0"/>
+                            <ScoreDistribution value="1" recordCount="0.0"/>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node id="112" score="0" recordCount="2.0">
+                    <SimplePredicate field="MMSE" operator="greaterThan" value="23.891086795412498"/>
+                    <ScoreDistribution value="0" recordCount="1.0"/>
+                    <ScoreDistribution value="1" recordCount="1.0"/>
+                  </Node>
+                </Node>
+              </Node>
+              <Node id="113" score="1" recordCount="55.0">
+                <SimplePredicate field="Problemas_Comportamiento" operator="greaterThan" value="0.5"/>
+                <ScoreDistribution value="0" recordCount="3.0"/>
+                <ScoreDistribution value="1" recordCount="52.0"/>
+                <Node id="116" score="1" recordCount="7.0">
+                  <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="164.7862124258272"/>
+                  <ScoreDistribution value="0" recordCount="2.0"/>
+                  <ScoreDistribution value="1" recordCount="5.0"/>
+                  <Node id="117" score="1" recordCount="5.0">
+                    <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="160.55835873173152"/>
+                    <ScoreDistribution value="0" recordCount="0.0"/>
+                    <ScoreDistribution value="1" recordCount="5.0"/>
+                  </Node>
+                  <Node id="118" score="0" recordCount="2.0">
+                    <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="160.55835873173152"/>
+                    <ScoreDistribution value="0" recordCount="2.0"/>
+                    <ScoreDistribution value="1" recordCount="0.0"/>
+                  </Node>
+                </Node>
+                <Node id="119" score="1" recordCount="48.0">
+                  <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="164.7862124258272"/>
+                  <ScoreDistribution value="0" recordCount="1.0"/>
+                  <ScoreDistribution value="1" recordCount="47.0"/>
+                </Node>
+              </Node>
+            </Node>
+            <Node id="126" score="1" recordCount="78.0">
+              <SimplePredicate field="Memoria_Quejas" operator="greaterThan" value="0.5"/>
+              <ScoreDistribution value="0" recordCount="2.0"/>
+              <ScoreDistribution value="1" recordCount="76.0"/>
+              <Node id="127" score="1" recordCount="70.0">
+                <SimplePredicate field="Sueño_Calidad" operator="lessOrEqual" value="9.312706344100324"/>
+                <ScoreDistribution value="0" recordCount="0.0"/>
+                <ScoreDistribution value="1" recordCount="70.0"/>
+              </Node>
+              <Node id="128" score="1" recordCount="8.0">
+                <SimplePredicate field="Sueño_Calidad" operator="greaterThan" value="9.312706344100324"/>
+                <ScoreDistribution value="0" recordCount="2.0"/>
+                <ScoreDistribution value="1" recordCount="6.0"/>
+                <Node id="129" score="1" recordCount="5.0">
+                  <SimplePredicate field="Colesterol_Trigliceridos" operator="lessOrEqual" value="319.00411911383287"/>
+                  <ScoreDistribution value="0" recordCount="0.0"/>
+                  <ScoreDistribution value="1" recordCount="5.0"/>
+                </Node>
+                <Node id="130" score="0" recordCount="3.0">
+                  <SimplePredicate field="Colesterol_Trigliceridos" operator="greaterThan" value="319.00411911383287"/>
+                  <ScoreDistribution value="0" recordCount="2.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node id="3" score="0" recordCount="206.0">
+          <SimplePredicate field="MMSE" operator="greaterThan" value="24.01401405388983"/>
+          <ScoreDistribution value="0" recordCount="197.0"/>
+          <ScoreDistribution value="1" recordCount="9.0"/>
+          <Node id="7" score="0" recordCount="173.0">
+            <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="8.352959215529074"/>
+            <ScoreDistribution value="0" recordCount="169.0"/>
+            <ScoreDistribution value="1" recordCount="4.0"/>
+            <Node id="10" score="0" recordCount="10.0">
+              <SimplePredicate field="ADL" operator="lessOrEqual" value="0.47874059962544235"/>
+              <ScoreDistribution value="0" recordCount="8.0"/>
+              <ScoreDistribution value="1" recordCount="2.0"/>
+              <Node id="11" score="1" recordCount="2.0">
+                <SimplePredicate field="IMC" operator="lessOrEqual" value="21.16452947204705"/>
+                <ScoreDistribution value="0" recordCount="0.0"/>
+                <ScoreDistribution value="1" recordCount="2.0"/>
+              </Node>
+              <Node id="12" score="0" recordCount="8.0">
+                <SimplePredicate field="IMC" operator="greaterThan" value="21.16452947204705"/>
+                <ScoreDistribution value="0" recordCount="8.0"/>
+                <ScoreDistribution value="1" recordCount="0.0"/>
+              </Node>
+            </Node>
+            <Node id="13" score="0" recordCount="163.0">
+              <SimplePredicate field="ADL" operator="greaterThan" value="0.47874059962544235"/>
+              <ScoreDistribution value="0" recordCount="161.0"/>
+              <ScoreDistribution value="1" recordCount="2.0"/>
+            </Node>
+          </Node>
+          <Node id="34" score="0" recordCount="33.0">
+            <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="8.352959215529074"/>
+            <ScoreDistribution value="0" recordCount="28.0"/>
+            <ScoreDistribution value="1" recordCount="5.0"/>
+            <Node id="35" score="0" recordCount="27.0">
+              <SimplePredicate field="Enfermedad_Cardiovascular" operator="lessOrEqual" value="0.5"/>
+              <ScoreDistribution value="0" recordCount="25.0"/>
+              <ScoreDistribution value="1" recordCount="2.0"/>
+              <Node id="37" score="0" recordCount="22.0">
+                <SimplePredicate field="PAD" operator="lessOrEqual" value="113.0"/>
+                <ScoreDistribution value="0" recordCount="22.0"/>
+                <ScoreDistribution value="1" recordCount="0.0"/>
+              </Node>
+              <Node id="38" score="0" recordCount="5.0">
+                <SimplePredicate field="PAD" operator="greaterThan" value="113.0"/>
+                <ScoreDistribution value="0" recordCount="3.0"/>
+                <ScoreDistribution value="1" recordCount="2.0"/>
+                <Node id="39" score="1" recordCount="2.0">
+                  <SimplePredicate field="Cambios_Personalidad" operator="lessOrEqual" value="0.5"/>
+                  <ScoreDistribution value="0" recordCount="0.0"/>
+                  <ScoreDistribution value="1" recordCount="2.0"/>
+                </Node>
+                <Node id="40" score="0" recordCount="3.0">
+                  <SimplePredicate field="Cambios_Personalidad" operator="greaterThan" value="0.5"/>
+                  <ScoreDistribution value="0" recordCount="3.0"/>
+                  <ScoreDistribution value="1" recordCount="0.0"/>
+                </Node>
+              </Node>
+            </Node>
+            <Node id="41" score="0" recordCount="6.0">
+              <SimplePredicate field="Enfermedad_Cardiovascular" operator="greaterThan" value="0.5"/>
+              <ScoreDistribution value="0" recordCount="3.0"/>
+              <ScoreDistribution value="1" recordCount="3.0"/>
+              <Node id="42" score="1" recordCount="3.0">
+                <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="241.8053881624149"/>
+                <ScoreDistribution value="0" recordCount="0.0"/>
+                <ScoreDistribution value="1" recordCount="3.0"/>
+              </Node>
+              <Node id="43" score="0" recordCount="3.0">
+                <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="241.8053881624149"/>
+                <ScoreDistribution value="0" recordCount="3.0"/>
+                <ScoreDistribution value="1" recordCount="0.0"/>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="2" score="0" recordCount="1095.0">
+        <SimplePredicate field="Evaluacion_Funcional" operator="greaterThan" value="5.0011120049197615"/>
+        <ScoreDistribution value="0" recordCount="919.0"/>
+        <ScoreDistribution value="1" recordCount="176.0"/>
+        <Node id="6" score="0" recordCount="873.0">
+          <SimplePredicate field="Memoria_Quejas" operator="lessOrEqual" value="0.5"/>
+          <ScoreDistribution value="0" recordCount="798.0"/>
+          <ScoreDistribution value="1" recordCount="75.0"/>
+          <Node id="62" score="0" recordCount="740.0">
+            <SimplePredicate field="Problemas_Comportamiento" operator="lessOrEqual" value="0.5"/>
+            <ScoreDistribution value="0" recordCount="711.0"/>
+            <ScoreDistribution value="1" recordCount="29.0"/>
+            <Node id="88" score="0" recordCount="737.0">
+              <SimplePredicate field="MMSE" operator="lessOrEqual" value="29.829632246088266"/>
+              <ScoreDistribution value="0" recordCount="710.0"/>
+              <ScoreDistribution value="1" recordCount="27.0"/>
+              <Node id="100" score="0" recordCount="4.0">
+                <SimplePredicate field="Colesterol_Trigliceridos" operator="lessOrEqual" value="51.3574375612353"/>
+                <ScoreDistribution value="0" recordCount="2.0"/>
+                <ScoreDistribution value="1" recordCount="2.0"/>
+                <Node id="101" score="0" recordCount="2.0">
+                  <SimplePredicate field="Evaluacion_Funcional" operator="lessOrEqual" value="7.950238374322353"/>
+                  <ScoreDistribution value="0" recordCount="2.0"/>
+                  <ScoreDistribution value="1" recordCount="0.0"/>
+                </Node>
+                <Node id="102" score="1" recordCount="2.0">
+                  <SimplePredicate field="Evaluacion_Funcional" operator="greaterThan" value="7.950238374322353"/>
+                  <ScoreDistribution value="0" recordCount="0.0"/>
+                  <ScoreDistribution value="1" recordCount="2.0"/>
+                </Node>
+              </Node>
+              <Node id="123" score="0" recordCount="733.0">
+                <SimplePredicate field="Colesterol_Trigliceridos" operator="greaterThan" value="51.3574375612353"/>
+                <ScoreDistribution value="0" recordCount="708.0"/>
+                <ScoreDistribution value="1" recordCount="25.0"/>
+                <Node id="132" score="0" recordCount="2.0">
+                  <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="0.04530851599999999"/>
+                  <ScoreDistribution value="0" recordCount="1.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+                <Node id="134" score="0" recordCount="731.0">
+                  <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="0.04530851599999999"/>
+                  <ScoreDistribution value="0" recordCount="707.0"/>
+                  <ScoreDistribution value="1" recordCount="24.0"/>
+                  <Node id="157" score="0" recordCount="2.0">
+                    <SimplePredicate field="ADL" operator="lessOrEqual" value="0.01884519114282602"/>
+                    <ScoreDistribution value="0" recordCount="1.0"/>
+                    <ScoreDistribution value="1" recordCount="1.0"/>
+                  </Node>
+                  <Node id="162" score="0" recordCount="729.0">
+                    <SimplePredicate field="ADL" operator="greaterThan" value="0.01884519114282602"/>
+                    <ScoreDistribution value="0" recordCount="706.0"/>
+                    <ScoreDistribution value="1" recordCount="23.0"/>
+                    <Node id="181" score="0" recordCount="30.0">
+                      <SimplePredicate field="Evaluacion_Funcional" operator="lessOrEqual" value="5.220161150481676"/>
+                      <ScoreDistribution value="0" recordCount="26.0"/>
+                      <ScoreDistribution value="1" recordCount="4.0"/>
+                      <Node id="182" score="0" recordCount="27.0">
+                        <SimplePredicate field="Grupo_Etnico" operator="lessOrEqual" value="2.5"/>
+                        <ScoreDistribution value="0" recordCount="26.0"/>
+                        <ScoreDistribution value="1" recordCount="1.0"/>
+                      </Node>
+                      <Node id="185" score="1" recordCount="3.0">
+                        <SimplePredicate field="Grupo_Etnico" operator="greaterThan" value="2.5"/>
+                        <ScoreDistribution value="0" recordCount="0.0"/>
+                        <ScoreDistribution value="1" recordCount="3.0"/>
+                      </Node>
+                    </Node>
+                    <Node id="186" score="0" recordCount="699.0">
+                      <SimplePredicate field="Evaluacion_Funcional" operator="greaterThan" value="5.220161150481676"/>
+                      <ScoreDistribution value="0" recordCount="680.0"/>
+                      <ScoreDistribution value="1" recordCount="19.0"/>
+                      <Node id="187" score="0" recordCount="41.0">
+                        <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="0.5141671624061422"/>
+                        <ScoreDistribution value="0" recordCount="37.0"/>
+                        <ScoreDistribution value="1" recordCount="4.0"/>
+                        <Node id="188" score="0" recordCount="21.0">
+                          <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="4.977794105308771"/>
+                          <ScoreDistribution value="0" recordCount="21.0"/>
+                          <ScoreDistribution value="1" recordCount="0.0"/>
+                        </Node>
+                        <Node id="189" score="0" recordCount="20.0">
+                          <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="4.977794105308771"/>
+                          <ScoreDistribution value="0" recordCount="16.0"/>
+                          <ScoreDistribution value="1" recordCount="4.0"/>
+                          <Node id="190" score="1" recordCount="2.0">
+                            <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="5.222004389902237"/>
+                            <ScoreDistribution value="0" recordCount="0.0"/>
+                            <ScoreDistribution value="1" recordCount="2.0"/>
+                          </Node>
+                          <Node id="191" score="0" recordCount="18.0">
+                            <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="5.222004389902237"/>
+                            <ScoreDistribution value="0" recordCount="16.0"/>
+                            <ScoreDistribution value="1" recordCount="2.0"/>
+                            <Node id="192" score="0" recordCount="5.0">
+                              <SimplePredicate field="Colesterol_LDL" operator="lessOrEqual" value="94.62826492499293"/>
+                              <ScoreDistribution value="0" recordCount="3.0"/>
+                              <ScoreDistribution value="1" recordCount="2.0"/>
+                              <Node id="193" score="1" recordCount="2.0">
+                                <SimplePredicate field="Colesterol _HDL" operator="lessOrEqual" value="60.94923668072693"/>
+                                <ScoreDistribution value="0" recordCount="0.0"/>
+                                <ScoreDistribution value="1" recordCount="2.0"/>
+                              </Node>
+                              <Node id="194" score="0" recordCount="3.0">
+                                <SimplePredicate field="Colesterol _HDL" operator="greaterThan" value="60.94923668072693"/>
+                                <ScoreDistribution value="0" recordCount="3.0"/>
+                                <ScoreDistribution value="1" recordCount="0.0"/>
+                              </Node>
+                            </Node>
+                            <Node id="195" score="0" recordCount="13.0">
+                              <SimplePredicate field="Colesterol_LDL" operator="greaterThan" value="94.62826492499293"/>
+                              <ScoreDistribution value="0" recordCount="13.0"/>
+                              <ScoreDistribution value="1" recordCount="0.0"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                      <Node id="196" score="0" recordCount="658.0">
+                        <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="0.5141671624061422"/>
+                        <ScoreDistribution value="0" recordCount="643.0"/>
+                        <ScoreDistribution value="1" recordCount="15.0"/>
+                        <Node id="197" score="0" recordCount="5.0">
+                          <SimplePredicate field="IMC" operator="lessOrEqual" value="15.20587929919859"/>
+                          <ScoreDistribution value="0" recordCount="4.0"/>
+                          <ScoreDistribution value="1" recordCount="1.0"/>
+                        </Node>
+                        <Node id="200" score="0" recordCount="653.0">
+                          <SimplePredicate field="IMC" operator="greaterThan" value="15.20587929919859"/>
+                          <ScoreDistribution value="0" recordCount="639.0"/>
+                          <ScoreDistribution value="1" recordCount="14.0"/>
+                          <Node id="201" score="0" recordCount="17.0">
+                            <SimplePredicate field="MMSE" operator="lessOrEqual" value="0.8394388428534738"/>
+                            <ScoreDistribution value="0" recordCount="15.0"/>
+                            <ScoreDistribution value="1" recordCount="2.0"/>
+                            <Node id="202" score="0" recordCount="12.0">
+                              <SimplePredicate field="MMSE" operator="lessOrEqual" value="0.660028386839453"/>
+                              <ScoreDistribution value="0" recordCount="12.0"/>
+                              <ScoreDistribution value="1" recordCount="0.0"/>
+                            </Node>
+                            <Node id="203" score="0" recordCount="5.0">
+                              <SimplePredicate field="MMSE" operator="greaterThan" value="0.660028386839453"/>
+                              <ScoreDistribution value="0" recordCount="3.0"/>
+                              <ScoreDistribution value="1" recordCount="2.0"/>
+                              <Node id="204" score="0" recordCount="3.0">
+                                <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="5.175068846957258"/>
+                                <ScoreDistribution value="0" recordCount="3.0"/>
+                                <ScoreDistribution value="1" recordCount="0.0"/>
+                              </Node>
+                              <Node id="205" score="1" recordCount="2.0">
+                                <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="5.175068846957258"/>
+                                <ScoreDistribution value="0" recordCount="0.0"/>
+                                <ScoreDistribution value="1" recordCount="2.0"/>
+                              </Node>
+                            </Node>
+                          </Node>
+                          <Node id="206" score="0" recordCount="636.0">
+                            <SimplePredicate field="MMSE" operator="greaterThan" value="0.8394388428534738"/>
+                            <ScoreDistribution value="0" recordCount="624.0"/>
+                            <ScoreDistribution value="1" recordCount="12.0"/>
+                            <Node id="207" score="0" recordCount="200.0">
+                              <SimplePredicate field="Colesterol_LDL" operator="lessOrEqual" value="93.88535885387083"/>
+                              <ScoreDistribution value="0" recordCount="192.0"/>
+                              <ScoreDistribution value="1" recordCount="8.0"/>
+                              <Node id="208" score="0" recordCount="196.0">
+                                <SimplePredicate field="Colesterol_LDL" operator="lessOrEqual" value="93.10144816247694"/>
+                                <ScoreDistribution value="0" recordCount="191.0"/>
+                                <ScoreDistribution value="1" recordCount="5.0"/>
+                                <Node id="209" score="0" recordCount="2.0">
+                                  <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="152.71389602857232"/>
+                                  <ScoreDistribution value="0" recordCount="1.0"/>
+                                  <ScoreDistribution value="1" recordCount="1.0"/>
+                                </Node>
+                                <Node id="210" score="0" recordCount="194.0">
+                                  <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="152.71389602857232"/>
+                                  <ScoreDistribution value="0" recordCount="190.0"/>
+                                  <ScoreDistribution value="1" recordCount="4.0"/>
+                                  <Node id="211" score="0" recordCount="190.0">
+                                    <SimplePredicate field="PAS" operator="lessOrEqual" value="177.5"/>
+                                    <ScoreDistribution value="0" recordCount="187.0"/>
+                                    <ScoreDistribution value="1" recordCount="3.0"/>
+                                    <Node id="212" score="0" recordCount="4.0">
+                                      <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="0.20110347943854578"/>
+                                      <ScoreDistribution value="0" recordCount="3.0"/>
+                                      <ScoreDistribution value="1" recordCount="1.0"/>
+                                    </Node>
+                                    <Node id="215" score="0" recordCount="186.0">
+                                      <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="0.20110347943854578"/>
+                                      <ScoreDistribution value="0" recordCount="184.0"/>
+                                      <ScoreDistribution value="1" recordCount="2.0"/>
+                                      <Node id="216" score="0" recordCount="165.0">
+                                        <SimplePredicate field="Lesiones_Cabeza" operator="lessOrEqual" value="0.5"/>
+                                        <ScoreDistribution value="0" recordCount="165.0"/>
+                                        <ScoreDistribution value="1" recordCount="0.0"/>
+                                      </Node>
+                                      <Node id="217" score="0" recordCount="21.0">
+                                        <SimplePredicate field="Lesiones_Cabeza" operator="greaterThan" value="0.5"/>
+                                        <ScoreDistribution value="0" recordCount="19.0"/>
+                                        <ScoreDistribution value="1" recordCount="2.0"/>
+                                        <Node id="218" score="0" recordCount="5.0">
+                                          <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="3.3995354981423254"/>
+                                          <ScoreDistribution value="0" recordCount="3.0"/>
+                                          <ScoreDistribution value="1" recordCount="2.0"/>
+                                          <Node id="219" score="1" recordCount="2.0">
+                                            <SimplePredicate field="IMC" operator="lessOrEqual" value="23.917741081716557"/>
+                                            <ScoreDistribution value="0" recordCount="0.0"/>
+                                            <ScoreDistribution value="1" recordCount="2.0"/>
+                                          </Node>
+                                          <Node id="220" score="0" recordCount="3.0">
+                                            <SimplePredicate field="IMC" operator="greaterThan" value="23.917741081716557"/>
+                                            <ScoreDistribution value="0" recordCount="3.0"/>
+                                            <ScoreDistribution value="1" recordCount="0.0"/>
+                                          </Node>
+                                        </Node>
+                                        <Node id="221" score="0" recordCount="16.0">
+                                          <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="3.3995354981423254"/>
+                                          <ScoreDistribution value="0" recordCount="16.0"/>
+                                          <ScoreDistribution value="1" recordCount="0.0"/>
+                                        </Node>
+                                      </Node>
+                                    </Node>
+                                  </Node>
+                                  <Node id="222" score="0" recordCount="4.0">
+                                    <SimplePredicate field="PAS" operator="greaterThan" value="177.5"/>
+                                    <ScoreDistribution value="0" recordCount="3.0"/>
+                                    <ScoreDistribution value="1" recordCount="1.0"/>
+                                  </Node>
+                                </Node>
+                              </Node>
+                              <Node id="225" score="1" recordCount="4.0">
+                                <SimplePredicate field="Colesterol_LDL" operator="greaterThan" value="93.10144816247694"/>
+                                <ScoreDistribution value="0" recordCount="1.0"/>
+                                <ScoreDistribution value="1" recordCount="3.0"/>
+                              </Node>
+                            </Node>
+                            <Node id="228" score="0" recordCount="436.0">
+                              <SimplePredicate field="Colesterol_LDL" operator="greaterThan" value="93.88535885387083"/>
+                              <ScoreDistribution value="0" recordCount="432.0"/>
+                              <ScoreDistribution value="1" recordCount="4.0"/>
+                            </Node>
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node id="87" score="1" recordCount="3.0">
+              <SimplePredicate field="MMSE" operator="greaterThan" value="29.829632246088266"/>
+              <ScoreDistribution value="0" recordCount="1.0"/>
+              <ScoreDistribution value="1" recordCount="2.0"/>
+            </Node>
+          </Node>
+          <Node id="59" score="0" recordCount="133.0">
+            <SimplePredicate field="Problemas_Comportamiento" operator="greaterThan" value="0.5"/>
+            <ScoreDistribution value="0" recordCount="87.0"/>
+            <ScoreDistribution value="1" recordCount="46.0"/>
+            <Node id="63" score="1" recordCount="58.0">
+              <SimplePredicate field="ADL" operator="lessOrEqual" value="5.037754710532895"/>
+              <ScoreDistribution value="0" recordCount="17.0"/>
+              <ScoreDistribution value="1" recordCount="41.0"/>
+              <Node id="64" score="1" recordCount="46.0">
+                <SimplePredicate field="MMSE" operator="lessOrEqual" value="23.991445490089646"/>
+                <ScoreDistribution value="0" recordCount="5.0"/>
+                <ScoreDistribution value="1" recordCount="41.0"/>
+                <Node id="65" score="0" recordCount="3.0">
+                  <SimplePredicate field="Colesterol_Total" operator="lessOrEqual" value="163.58239968085195"/>
+                  <ScoreDistribution value="0" recordCount="2.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+                <Node id="66" score="1" recordCount="43.0">
+                  <SimplePredicate field="Colesterol_Total" operator="greaterThan" value="163.58239968085195"/>
+                  <ScoreDistribution value="0" recordCount="3.0"/>
+                  <ScoreDistribution value="1" recordCount="40.0"/>
+                  <Node id="67" score="1" recordCount="34.0">
+                    <SimplePredicate field="PAS" operator="lessOrEqual" value="152.5"/>
+                    <ScoreDistribution value="0" recordCount="0.0"/>
+                    <ScoreDistribution value="1" recordCount="34.0"/>
+                  </Node>
+                  <Node id="68" score="1" recordCount="9.0">
+                    <SimplePredicate field="PAS" operator="greaterThan" value="152.5"/>
+                    <ScoreDistribution value="0" recordCount="3.0"/>
+                    <ScoreDistribution value="1" recordCount="6.0"/>
+                    <Node id="69" score="1" recordCount="6.0">
+                      <SimplePredicate field="Colesterol_Trigliceridos" operator="lessOrEqual" value="265.2969549424178"/>
+                      <ScoreDistribution value="0" recordCount="0.0"/>
+                      <ScoreDistribution value="1" recordCount="6.0"/>
+                    </Node>
+                    <Node id="70" score="0" recordCount="3.0">
+                      <SimplePredicate field="Colesterol_Trigliceridos" operator="greaterThan" value="265.2969549424178"/>
+                      <ScoreDistribution value="0" recordCount="3.0"/>
+                      <ScoreDistribution value="1" recordCount="0.0"/>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node id="71" score="0" recordCount="12.0">
+                <SimplePredicate field="MMSE" operator="greaterThan" value="23.991445490089646"/>
+                <ScoreDistribution value="0" recordCount="12.0"/>
+                <ScoreDistribution value="1" recordCount="0.0"/>
+              </Node>
+            </Node>
+            <Node id="72" score="0" recordCount="75.0">
+              <SimplePredicate field="ADL" operator="greaterThan" value="5.037754710532895"/>
+              <ScoreDistribution value="0" recordCount="70.0"/>
+              <ScoreDistribution value="1" recordCount="5.0"/>
+              <Node id="73" score="0" recordCount="68.0">
+                <SimplePredicate field="Colesterol _HDL" operator="lessOrEqual" value="93.2269270837428"/>
+                <ScoreDistribution value="0" recordCount="67.0"/>
+                <ScoreDistribution value="1" recordCount="1.0"/>
+              </Node>
+              <Node id="80" score="1" recordCount="7.0">
+                <SimplePredicate field="Colesterol _HDL" operator="greaterThan" value="93.2269270837428"/>
+                <ScoreDistribution value="0" recordCount="3.0"/>
+                <ScoreDistribution value="1" recordCount="4.0"/>
+                <Node id="81" score="1" recordCount="3.0">
+                  <SimplePredicate field="Falta_de_Memoria_Frecuente" operator="lessOrEqual" value="0.5"/>
+                  <ScoreDistribution value="0" recordCount="0.0"/>
+                  <ScoreDistribution value="1" recordCount="3.0"/>
+                </Node>
+                <Node id="82" score="0" recordCount="4.0">
+                  <SimplePredicate field="Falta_de_Memoria_Frecuente" operator="greaterThan" value="0.5"/>
+                  <ScoreDistribution value="0" recordCount="3.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node id="5" score="0" recordCount="222.0">
+          <SimplePredicate field="Memoria_Quejas" operator="greaterThan" value="0.5"/>
+          <ScoreDistribution value="0" recordCount="121.0"/>
+          <ScoreDistribution value="1" recordCount="101.0"/>
+          <Node id="8" score="1" recordCount="109.0">
+            <SimplePredicate field="ADL" operator="lessOrEqual" value="4.989479266367593"/>
+            <ScoreDistribution value="0" recordCount="30.0"/>
+            <ScoreDistribution value="1" recordCount="79.0"/>
+            <Node id="9" score="1" recordCount="85.0">
+              <SimplePredicate field="MMSE" operator="lessOrEqual" value="23.596840700673724"/>
+              <ScoreDistribution value="0" recordCount="6.0"/>
+              <ScoreDistribution value="1" recordCount="79.0"/>
+              <Node id="14" score="1" recordCount="26.0">
+                <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="3.1714078721700454"/>
+                <ScoreDistribution value="0" recordCount="6.0"/>
+                <ScoreDistribution value="1" recordCount="20.0"/>
+                <Node id="15" score="1" recordCount="21.0">
+                  <SimplePredicate field="Consumo_Alcohol" operator="lessOrEqual" value="15.338249661847538"/>
+                  <ScoreDistribution value="0" recordCount="2.0"/>
+                  <ScoreDistribution value="1" recordCount="19.0"/>
+                  <Node id="16" score="1" recordCount="6.0">
+                    <SimplePredicate field="Dieta_Calidad" operator="lessOrEqual" value="3.0032760346031795"/>
+                    <ScoreDistribution value="0" recordCount="2.0"/>
+                    <ScoreDistribution value="1" recordCount="4.0"/>
+                    <Node id="17" score="1" recordCount="4.0">
+                      <SimplePredicate field="Evaluacion_Funcional" operator="lessOrEqual" value="7.578463489344909"/>
+                      <ScoreDistribution value="0" recordCount="0.0"/>
+                      <ScoreDistribution value="1" recordCount="4.0"/>
+                    </Node>
+                    <Node id="18" score="0" recordCount="2.0">
+                      <SimplePredicate field="Evaluacion_Funcional" operator="greaterThan" value="7.578463489344909"/>
+                      <ScoreDistribution value="0" recordCount="2.0"/>
+                      <ScoreDistribution value="1" recordCount="0.0"/>
+                    </Node>
+                  </Node>
+                  <Node id="19" score="1" recordCount="15.0">
+                    <SimplePredicate field="Dieta_Calidad" operator="greaterThan" value="3.0032760346031795"/>
+                    <ScoreDistribution value="0" recordCount="0.0"/>
+                    <ScoreDistribution value="1" recordCount="15.0"/>
+                  </Node>
+                </Node>
+                <Node id="20" score="0" recordCount="5.0">
+                  <SimplePredicate field="Consumo_Alcohol" operator="greaterThan" value="15.338249661847538"/>
+                  <ScoreDistribution value="0" recordCount="4.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+              </Node>
+              <Node id="23" score="1" recordCount="59.0">
+                <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="3.1714078721700454"/>
+                <ScoreDistribution value="0" recordCount="0.0"/>
+                <ScoreDistribution value="1" recordCount="59.0"/>
+              </Node>
+            </Node>
+            <Node id="24" score="0" recordCount="24.0">
+              <SimplePredicate field="MMSE" operator="greaterThan" value="23.596840700673724"/>
+              <ScoreDistribution value="0" recordCount="24.0"/>
+              <ScoreDistribution value="1" recordCount="0.0"/>
+            </Node>
+          </Node>
+          <Node id="25" score="0" recordCount="113.0">
+            <SimplePredicate field="ADL" operator="greaterThan" value="4.989479266367593"/>
+            <ScoreDistribution value="0" recordCount="91.0"/>
+            <ScoreDistribution value="1" recordCount="22.0"/>
+            <Node id="28" score="0" recordCount="92.0">
+              <SimplePredicate field="Problemas_Comportamiento" operator="lessOrEqual" value="0.5"/>
+              <ScoreDistribution value="0" recordCount="87.0"/>
+              <ScoreDistribution value="1" recordCount="5.0"/>
+              <Node id="29" score="0" recordCount="90.0">
+                <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="9.965948736523714"/>
+                <ScoreDistribution value="0" recordCount="86.0"/>
+                <ScoreDistribution value="1" recordCount="4.0"/>
+                <Node id="36" score="0" recordCount="69.0">
+                  <SimplePredicate field="Colesterol_LDL" operator="lessOrEqual" value="160.9672938151001"/>
+                  <ScoreDistribution value="0" recordCount="68.0"/>
+                  <ScoreDistribution value="1" recordCount="1.0"/>
+                </Node>
+                <Node id="48" score="0" recordCount="21.0">
+                  <SimplePredicate field="Colesterol_LDL" operator="greaterThan" value="160.9672938151001"/>
+                  <ScoreDistribution value="0" recordCount="18.0"/>
+                  <ScoreDistribution value="1" recordCount="3.0"/>
+                  <Node id="49" score="0" recordCount="13.0">
+                    <SimplePredicate field="PAD" operator="lessOrEqual" value="89.0"/>
+                    <ScoreDistribution value="0" recordCount="13.0"/>
+                    <ScoreDistribution value="1" recordCount="0.0"/>
+                  </Node>
+                  <Node id="50" score="0" recordCount="8.0">
+                    <SimplePredicate field="PAD" operator="greaterThan" value="89.0"/>
+                    <ScoreDistribution value="0" recordCount="5.0"/>
+                    <ScoreDistribution value="1" recordCount="3.0"/>
+                    <Node id="51" score="1" recordCount="4.0">
+                      <SimplePredicate field="Actividad_Fisica" operator="lessOrEqual" value="4.824121800613994"/>
+                      <ScoreDistribution value="0" recordCount="1.0"/>
+                      <ScoreDistribution value="1" recordCount="3.0"/>
+                    </Node>
+                    <Node id="54" score="0" recordCount="4.0">
+                      <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="4.824121800613994"/>
+                      <ScoreDistribution value="0" recordCount="4.0"/>
+                      <ScoreDistribution value="1" recordCount="0.0"/>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node id="55" score="0" recordCount="2.0">
+                <SimplePredicate field="Actividad_Fisica" operator="greaterThan" value="9.965948736523714"/>
+                <ScoreDistribution value="0" recordCount="1.0"/>
+                <ScoreDistribution value="1" recordCount="1.0"/>
+              </Node>
+            </Node>
+            <Node id="56" score="1" recordCount="21.0">
+              <SimplePredicate field="Problemas_Comportamiento" operator="greaterThan" value="0.5"/>
+              <ScoreDistribution value="0" recordCount="4.0"/>
+              <ScoreDistribution value="1" recordCount="17.0"/>
+              <Node id="57" score="1" recordCount="17.0">
+                <SimplePredicate field="MMSE" operator="lessOrEqual" value="23.559647366080526"/>
+                <ScoreDistribution value="0" recordCount="0.0"/>
+                <ScoreDistribution value="1" recordCount="17.0"/>
+              </Node>
+              <Node id="58" score="0" recordCount="4.0">
+                <SimplePredicate field="MMSE" operator="greaterThan" value="23.559647366080526"/>
+                <ScoreDistribution value="0" recordCount="4.0"/>
+                <ScoreDistribution value="1" recordCount="0.0"/>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+    </Node>
+  </TreeModel>
+</PMML>
